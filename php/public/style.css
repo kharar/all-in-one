@@ -471,6 +471,26 @@ input[type="checkbox"]:disabled:not(:checked) + label {
     display: block;
 }
 
+#overlay #overlay-log.visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1s ease-in;
+}
+
+#overlay #overlay-log {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: calc(50% + 120px);
+    width: 20%;
+    height: 5rem;
+    margin: 0 39%;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    border: solid thin rgb(192, 192, 192);
+    background-color: rgba(128, 128, 128);
+}
+
 .loader {
     border: 16px solid var(--color-loader);
     border-radius: 50%;
